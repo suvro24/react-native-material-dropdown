@@ -629,8 +629,8 @@ export default class Dropdown extends PureComponent {
     ];
 
     return (
-      <DropdownItem index={index} {...props}>
-        <Text style={[styles.item, itemTextStyle, textStyle]} numberOfLines={2}>
+      <DropdownItem index={index} {...props} style={{flex:1}}>
+        <Text style={[styles.item, itemTextStyle, textStyle,  {flex: 1, flexWrap: 'wrap'}]} multiline={true}>
           {title}
         </Text>
       </DropdownItem>
